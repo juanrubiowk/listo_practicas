@@ -16,3 +16,4 @@ no changes added to commit (use "git add" and/or "git commit -a"): guardalo prep
 - : lo que has cambiado y aún no hsa preparado
 - : lo que está preparado
 - `git log --oneline`: el historial, un commit por línea
+- `git commit -am "mensaje"`: add y commit de lo ya seguido
