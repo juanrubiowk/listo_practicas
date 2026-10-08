@@ -15,3 +15,4 @@ Changes not staged for commit:
 no changes added to commit (use "git add" and/or "git commit -a"): guardalo preparado en un commit
 - : lo que has cambiado y aún no hsa preparado
 - : lo que está preparado
+- `git log --oneline`: el historial, un commit por línea
