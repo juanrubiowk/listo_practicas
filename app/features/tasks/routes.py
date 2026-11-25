@@ -51,3 +51,10 @@ def delete(task_id):
     services.delete_task(task)
     flash("Tarea eliminada.", "info")
     return redirect(url_for("tasks.index"))
+
+@tasks_bp.route("/count")
+@login_required
+def count():
+    tasks = services.list_tasks(current_user)
+    pending = len([task for task in tasks if not task.done])
+    return f"{pending} de {len(tasks)}"
