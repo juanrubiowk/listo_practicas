@@ -52,6 +52,7 @@ def delete(task_id):
     flash("Tarea eliminada.", "info")
     return redirect(url_for("tasks.index"))
 
+
 @tasks_bp.route("/count")
 @login_required
 def count():
